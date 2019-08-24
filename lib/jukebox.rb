@@ -39,12 +39,19 @@ def play(songs)
     
   else 
     if user_input.to_i > 0 && user_input.to_i <= songs.size
-      puts "Playing #{song[user_input.to_i - 1]}"
+      puts "Playing #{songs[user_input.to_i - 1]}"
     else 
+      puts "Invalid input, please try again"
     end
-    
-      
-    
   end
 end
+
+def exit_jukebox
+  puts "Goodbye"
+end
+
+def run
+  puts "Please"
+end
+
   
