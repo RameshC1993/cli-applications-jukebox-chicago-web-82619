@@ -32,6 +32,8 @@ def play(songs)
     song_exist = songs.include?(user_input)
     
     if song_exist == true
+      puts "Playing #{user_input}"
+    else 
       puts ""
     end 
       
