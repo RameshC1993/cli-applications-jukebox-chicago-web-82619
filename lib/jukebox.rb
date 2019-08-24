@@ -34,9 +34,14 @@ def play(songs)
     if song_exist == true
       puts "Playing #{user_input}"
     else 
-      puts ""
+      puts "Invalid input, please try again"
     end 
-      
+    
+  else 
+    if user_input.to_i > 0 && user_input.to_i <= songs.size
+      puts "Playing #{song[user_input.to_i - 1]}"
+    else 
+    end
     
       
     
