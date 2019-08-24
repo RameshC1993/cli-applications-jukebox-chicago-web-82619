@@ -28,7 +28,15 @@ def play(songs)
   puts "Please enter a song name or number:"
   user_input = gets.strip
   
-  if user_input.to_i 
+  if user_input.to_i == 0
+    song_exist = songs.include?(user_input)
+    
+    if song_exist == true
+      puts ""
+    end 
+      
+    
+      
     
   end
 end
