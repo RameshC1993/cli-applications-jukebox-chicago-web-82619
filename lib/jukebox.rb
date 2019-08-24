@@ -52,9 +52,10 @@ end
 
 def run(songs)
   puts "Please enter a command:"
-  user_command = gets.strip
   
   while true
+    user_command = gets.strip
+    
     if user_command == "help"
       help
     elsif user_command == "list"
